@@ -1,0 +1,187 @@
+:root {
+  color-scheme: light;
+  --ink: #16323c;
+  --muted: #4e6570;
+  --line: #d5e4ea;
+  --paper: #f3f8fa;
+  --card: #ffffff;
+  --brand: #a0d4e1;
+  --accent: #1a6a80;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--accent);
+}
+
+.site-header,
+main,
+footer {
+  width: min(920px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+.brand {
+  display: block;
+  line-height: 0;
+}
+
+.brand img {
+  width: 96px;
+  height: 96px;
+  border-radius: 20px;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.hero {
+  padding: 24px 0 8px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  line-height: 1.05;
+  font-weight: 650;
+}
+
+.lead {
+  max-width: 40rem;
+  color: var(--ink);
+  font-size: 1.12rem;
+  line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+}
+
+.button-quiet {
+  background: transparent;
+  color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 560px;
+  margin: 28px 0 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+}
+
+.card {
+  margin: 28px 0;
+  padding: 24px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 1.25rem;
+}
+
+dl {
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+dt {
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+dd {
+  margin: 2px 0 0;
+}
+
+.prose h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.prose h2 {
+  margin-top: 24px;
+}
+
+.updated {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+footer {
+  padding: 8px 0 40px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 4px 0;
+}
+
+@media (max-width: 640px) {
+  .gallery {
+    max-width: none;
+    gap: 12px;
+  }
+}
