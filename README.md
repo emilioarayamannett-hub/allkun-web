@@ -9,6 +9,6 @@ Meta revisa una URL **https** pública. Esta carpeta se puede subir tal cual a N
 En Business Info tienen que coincidir:
 
 - Nombre legal: CENTRO PARA EL DESARROLLO HUMANO ALLKÜN SpA
-- Dirección: Lientur 595, Concepción
+- Dirección: Lientur 645, Concepción
 - Teléfono: +56 9 4659 6672
 - Sitio: la URL pública de este repo
