@@ -9,21 +9,29 @@
       content="Política de privacidad de CENTRO PARA EL DESARROLLO HUMANO ALLKÜN SpA."
     />
     <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="index.html">
-        <img src="logo.png" alt="Centro Allkün" width="96" height="96" />
-      </a>
-      <nav>
-        <a href="https://www.instagram.com/centro.allkun/">Instagram</a>
-        <a href="index.html#contacto">Contacto</a>
-      </nav>
+      <div class="wrap bar">
+        <a class="brand" href="index.html">
+          <img src="logo.png" alt="Centro Allkün" width="92" height="92" />
+        </a>
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="index.html#contacto">Visítanos</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <article class="card prose">
+      <article class="card prose narrow">
         <h1>Política de privacidad</h1>
         <p>
           Esta política es de <strong>Centro Allkün</strong>, razón social
@@ -71,13 +79,18 @@
       </article>
     </main>
 
-    <footer>
-      <p>
-        Centro Allkün es el nombre comercial de CENTRO PARA EL DESARROLLO
-        HUMANO ALLKÜN SpA.
-      </p>
-      <p>Lientur 595, Concepción · +56 9 4659 6672</p>
-      <p><a href="index.html">Volver al inicio</a></p>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Centro Allkün es el nombre comercial de CENTRO PARA EL DESARROLLO
+          HUMANO ALLKÜN SpA.
+        </p>
+        <p>
+          Lientur 595, Concepción ·
+          <a href="tel:+56946596672">+56 9 4659 6672</a>
+        </p>
+        <p><a href="index.html">Volver al inicio</a></p>
+      </div>
     </footer>
   </body>
 </html>
